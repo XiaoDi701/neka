@@ -28,33 +28,36 @@ let r = 255, g = 255, b = 150;
 
 function setup() {
   createCanvas(400, 400);
-  let label = createElement("p", "Back Hair Length(suggested number1-16):");
+  let label = createElement("p", "Back Hair Length (suggested number 1-16):");
   label.position(10, 380);
-  label.style("color", "white");
+  label.style("color", "white"); // 修改颜色
   input = createInput();
   input.attribute("type", "number");
   input.position(10, 420);
   input.input(updateValue);
 
-  let label2 = createElement("p", "Side Hair Length(suggested number1-16):");
+  // 创建第二个标签和输入框
+  let label2 = createElement("p", "Side Hair Length (suggested number 1-16):");
   label2.position(10, 450);
-  label.style("color", "white");
+  label2.style("color", "white"); // 修改颜色
   input2 = createInput();
   input2.attribute("type", "number");
   input2.position(10, 470);
   input2.input(updateValue2);
 
-  let label3 = createElement("p", "Front hair Length(suggested number1-4):");
+  // 创建第三个标签和输入框
+  let label3 = createElement("p", "Front Hair Length (suggested number 1-4):");
   label3.position(10, 490);
-  label.style("color", "white");
+  label3.style("color", "white"); // 修改颜色
   input3 = createInput();
   input3.attribute("type", "number");
   input3.position(10, 520);
   input3.input(updateValue3);
 
-  let label4 = createElement("p", "Body Size(suggested number1-9):");
+  // 创建第四个标签和输入框
+  let label4 = createElement("p", "Body Size (suggested number 1-9):");
   label4.position(10, 540);
-  label.style("color", "white");
+  label4.style("color", "white"); // 修改颜色
   input4 = createInput();
   input4.attribute("type", "number");
   input4.position(10, 580);
